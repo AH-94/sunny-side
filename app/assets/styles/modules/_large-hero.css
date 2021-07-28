@@ -1,0 +1,43 @@
+.large-hero {
+    min-height: 100vh;
+    background-image: url('./assets/images/image-header-mob.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @mixin atMedium {
+        background-image: url('./assets/images/image-header-desk.jpg');
+    }
+
+    &__text {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        text-align: center;
+
+        @mixin atMedium {
+            position: relative;
+            top: -100px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-family: 'Fraunces', sans-serif;
+        color: $white;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin: 0 0 1em 0;
+
+        @mixin atExtraSmall {
+           font-size: 2.5rem;
+        }
+
+        @mixin atSmall {
+            font-size: 4.0625rem;
+        }
+    }
+}
