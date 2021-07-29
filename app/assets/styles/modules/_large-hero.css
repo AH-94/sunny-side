@@ -16,15 +16,16 @@
         grid-row: 1;
         align-self: center;
         text-align: center;
+        position: relative;
+        top: 10vw;
 
-        @mixin atMedium {
-            position: relative;
-            top: -100px;
+        @mixin atSmall {
+            top: -5vw;
         }
     }
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 1.5625rem;
         font-family: 'Fraunces', sans-serif;
         color: $white;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
@@ -33,10 +34,14 @@
         margin: 0 0 1em 0;
 
         @mixin atExtraSmall {
-           font-size: 2.5rem;
+            font-size: 2.1875rem;
         }
 
         @mixin atSmall {
+            font-size: 2.8125rem;
+        }
+
+        @mixin atMedium {
             font-size: 4.0625rem;
         }
     }
