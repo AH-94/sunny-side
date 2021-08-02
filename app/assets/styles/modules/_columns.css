@@ -1,0 +1,25 @@
+.columns {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__span-12 {
+        grid-column: span 12;
+    }
+
+    &__arrange-first-at-mob {
+        grid-row: 1 / 2;
+    }
+
+    @mixin atMedium {
+
+      &__span-6 {
+            grid-column: span 6;
+        }
+
+        &__arrange-first-at-mob {
+            grid-row: auto;
+        }
+
+    }
+}

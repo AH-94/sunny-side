@@ -5,8 +5,7 @@
     margin: 0 auto;
     overflow: hidden;
 
-    .wrapper {
-        padding-right: 0;
-        padding-left: 0;
+    &--small {
+        max-width: 486px;
     }
 }
