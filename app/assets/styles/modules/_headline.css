@@ -1,0 +1,34 @@
+.headline {
+
+        margin: 0;
+        line-height: 1.2;
+        font-family: 'Fraunces', sans-serif;
+
+        &--small {
+            font-size: 1.7rem;
+
+            @mixin atLarge {
+                font-size: 2rem;
+            }
+        }
+
+        &--large {
+            font-size: 1.875rem;
+
+            @mixin atLarge {
+                font-size: 3.4375rem;
+            }
+        }
+
+        &--dark {
+            color: $veryDarkDesaturatedBlue;
+        }
+
+        &--cyan {
+            color: $darkDesaturatedCyan;
+        }
+
+        &--blue {
+            color: $darkBlue;
+        }
+}

@@ -16,18 +16,6 @@
         }
     }
 
-    &__title {
-        margin: 0;
-        line-height: 1.2;
-        font-size: 1.875rem;
-        font-family: 'Fraunces', sans-serif;
-        color: $veryDarkDesaturatedBlue;
-
-        @mixin atLarge {
-            font-size: 3.4375rem;
-        }
-    }
-
     &__link {
         display: inline-block;
         text-decoration: none;
@@ -44,10 +32,17 @@
             left: -3px;
             bottom: 0;
             z-index: -1;
-            background-color: $yellow;
             border-radius: 100vmax;
             opacity: .3;
             transition: opacity 250ms ease-in-out;
+        }
+
+        &--yellow::after {
+            background-color: $yellow;
+        }
+
+        &--red::after {
+            background-color: $softRed;
         }
 
         &:hover::after {
@@ -55,13 +50,33 @@
         }
     }
 
-    &__image--stretch {
+    &__image {
+
         display: flex;
 
         img {
             flex-grow: 1;
-            max-height: 624px;
             object-fit: cover;
         }
+
+        &--max-height {
+            max-height: 600px;
+        }
+        
     }
+
+    &__overlay-content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding-bottom: 1em;
+
+        @mixin atLarge {
+            padding-bottom: 5em;
+        }
+    }
+
+    
 }

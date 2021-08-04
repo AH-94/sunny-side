@@ -3,23 +3,65 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 
+    &__span-6--overlay {
+        position: relative;
+    }
+
     &__span-12 {
         grid-column: span 12;
     }
 
-    &__arrange-first-at-mob {
-        grid-row: 1 / 2;
+    &--start-at-row-1-at-mob {
+        grid-row: 1;
+    }
+
+    &--start-at-row-3-at-mob {
+        grid-row: 3;
+    }
+
+    &--full-height-grow {
+        display: flex;
+
+        & > * {
+            flex: 1;
+        }
     }
 
     @mixin atMedium {
 
-      &__span-6 {
+        &__span-6 {
             grid-column: span 6;
+
+            &--ordered:nth-child(1) {
+                order: 1;
+            }
+    
+            &--ordered:nth-child(2) {
+                order: 2;
+            }
+    
+            &--ordered:nth-child(3) {
+                order: 4;
+            }
+    
+            &--ordered:nth-child(4) {
+                order: 3;
+            }
+    
+            &--ordered:nth-child(5) {
+                order: 5;
+            }
+    
+            &--ordered:nth-child(6) {
+                order: 6;
+            }
         }
 
-        &__arrange-first-at-mob {
+        &--start-at-row-1-at-mob,
+        &--start-at-row-3-at-mob {
             grid-row: auto;
         }
+
 
     }
 }
