@@ -1,0 +1,33 @@
+.testimonial {
+    text-align: center;
+    margin-top: 5rem;
+
+    &__image {
+        display: inline-block;
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__info {
+        font-size: 20px;
+        color: $veryDarkDesaturatedBlue !important;
+        font-weight: bold;
+        font-family: 'Fraunces', sans-serif;
+
+        span {
+            display: block;
+            font-size: .8rem;
+            color: $grayishBlue;
+            font-family: 'Barlow', sans-serif;
+            margin-top: .5rem;
+        }
+    }
+
+    &__quote {
+        max-width: 35ch;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -2,7 +2,7 @@
     
     p {
         line-height: 1.6;
-        color: $darkGrayishBlue;
+        color: $veryDarkGrayishBlue;
     }
 
     &--cyan p {

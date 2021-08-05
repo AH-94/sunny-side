@@ -3,4 +3,13 @@
     &--no-padding {
         padding: 0;
     }
+
+    &--padding-large {
+
+        padding: 5rem 0;
+
+        @mixin atSmall {
+        padding: 10rem 0;
+        }
+    }
 }

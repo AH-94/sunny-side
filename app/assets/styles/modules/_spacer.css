@@ -1,5 +1,11 @@
 .spacer {
     & > * + * {
-        margin-top: 1.2em;
+        margin-top: 1.2rem;
+    }
+
+    &--large {
+        & > * + * {
+            margin-top: 2.4rem;
+        }
     }
 }

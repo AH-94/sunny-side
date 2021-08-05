@@ -29,6 +29,10 @@
 
     @mixin atMedium {
 
+        &__span-4 {
+            grid-column: span 4;
+        }
+
         &__span-6 {
             grid-column: span 6;
 
@@ -60,6 +64,10 @@
         &--start-at-row-1-at-mob,
         &--start-at-row-3-at-mob {
             grid-row: auto;
+        }
+
+        &--gutter {
+            column-gap: 5%;
         }
 
 
