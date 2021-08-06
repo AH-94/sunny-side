@@ -12,4 +12,17 @@
         padding: 10rem 0;
         }
     }
+
+    &--padding-small {
+
+        padding: 2.5rem 0;
+
+        @mixin atSmall {
+            padding: 5rem 0;
+        }
+    }
+
+    &--cyan {
+        background-color: $lightModerateCyan;
+    }
 }

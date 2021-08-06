@@ -11,9 +11,15 @@
         @mixin atMedium {
             flex-direction: row;
         }
+
+        &--footer {
+            flex-flow: row wrap;
+            justify-content: center;
+            margin-right: -2em;
+        }
     }
 
-    &__list-item {
+    &__list-item--header:not(:last-child) {
         margin-bottom: 1.5rem;
 
         @mixin atMedium {
@@ -21,6 +27,11 @@
             margin-bottom: 0;
         }
 
+    }
+
+    &__list-item--footer {
+        margin-bottom: 0;
+        margin-right: 2em;
     }
 
     &__link {
@@ -53,6 +64,7 @@
             &::after {
                 background-color: $white;
             }
+
         }
         
 
@@ -60,5 +72,15 @@
             color: $white;
             text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         }
+
+        &--footer {
+            color: $darkModerateCyan;
+            text-shadow: none;
+
+            &::after {
+                background-color: $darkModerateCyan;
+            }
+        }
+
     }
 }

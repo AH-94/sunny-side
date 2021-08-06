@@ -1,0 +1,7 @@
+.footer {
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+}
