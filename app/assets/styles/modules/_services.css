@@ -50,21 +50,6 @@
         }
     }
 
-    &__image {
-
-        display: flex;
-
-        img {
-            flex-grow: 1;
-            object-fit: cover;
-        }
-
-        &--max-height {
-            max-height: 600px;
-        }
-        
-    }
-
     &__overlay-content {
         position: absolute;
         width: 100%;
