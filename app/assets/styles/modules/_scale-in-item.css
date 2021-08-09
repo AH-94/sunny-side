@@ -1,0 +1,18 @@
+.scale-in-item {
+
+    img {
+        opacity: 0;
+        transform: scale(.75);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+
+
+
+    &--is-visible {
+
+        img {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

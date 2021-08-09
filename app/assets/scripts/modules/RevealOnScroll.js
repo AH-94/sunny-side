@@ -5,9 +5,10 @@ import debounce from 'lodash/debounce';
 
 
 class RevealOnScroll {
-    constructor(els, thresholdPercent) {
+    constructor(els, thresholdPercent, classString) {
         this.itemsToReveal = els;
         this.thresholdPercent = thresholdPercent;
+        this.revealClass = classString;
         this.hideInitially();
         this.scrollThrottle = throttle(this.runOnScroll, 200).bind(this);
         this.events();
@@ -16,7 +17,7 @@ class RevealOnScroll {
 
     hideInitially() {
         this.itemsToReveal.forEach(el => {
-            el.classList.add('reveal-item');
+            el.classList.add(this.revealClass);
             el.isRevealed = false;
         });
 
@@ -46,7 +47,7 @@ class RevealOnScroll {
             let scrollPercent = (el.getBoundingClientRect().top / this.browserHeight) * 100;
 
             if (scrollPercent < this.thresholdPercent) {
-                el.classList.add('reveal-item--is-visible');
+                el.classList.add(`${this.revealClass}--is-visible`);
                 el.isRevealed = true;
 
                 if (el.isLastItem) {
