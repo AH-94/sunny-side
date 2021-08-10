@@ -2,6 +2,8 @@
 
     &__image {
 
+        overflow: hidden;
+
         img {
             display: block;
         }

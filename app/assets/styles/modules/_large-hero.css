@@ -4,11 +4,13 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr;
 
     @mixin atMedium {
         background-image: url('./assets/images/image-header-desk.jpg');
+        padding-bottom: 10%;
     }
 
     &__text {
@@ -17,10 +19,6 @@
         align-self: center;
         text-align: center;
         position: relative;
-
-        @mixin atSmall {
-            top: -5vw;
-        }
     }
 
     &__title {
