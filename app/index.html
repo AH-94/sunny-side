@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-    <script src="./bundled.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -70,8 +69,8 @@
                 </div>
                 <div class="columns__span-6 columns__span-12-mob columns--start-at-row-1-at-mob columns--full-height-grow columns__span-6--ordered">
                     <picture class="gallery__image gallery__image--flex-grow gallery__image--max-height">
-                        <source srcset="./assets/images/image-transform-desk.jpg" media="(min-width: 750px)">
-                        <img srcset="./assets/images/image-transform-mob.jpg" alt="Image of egg on yellow background">
+                        <source data-srcset="./assets/images/image-transform-desk.jpg" media="(min-width: 750px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-transform-mob.jpg" alt="Image of egg on yellow background">
                     </picture>
                 </div>
 
@@ -88,14 +87,14 @@
                 </div>
                 <div class="columns__span-6 columns__span-12-mob columns--start-at-row-3-at-mob columns--full-height-grow columns__span-6--ordered">
                     <picture class="gallery__image gallery__image--flex-grow gallery__image--max-height">
-                        <source srcset="./assets/images/image-stand-out-desk.jpg" media="(min-width: 750px)">
-                        <img srcset="./assets/images/image-stand-out-mob.jpg" alt="Image of egg on yellow background">
+                        <source data-srcset="./assets/images/image-stand-out-desk.jpg" media="(min-width: 750px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-stand-out-mob.jpg" alt="Image of egg on yellow background">
                     </picture>
                 </div>
                 <div class="columns__span-6 columns__span-12-mob columns--full-height-grow columns__span-6--ordered columns__span-6--overlay">
                     <picture class="gallery__image gallery__image--flex-grow">
-                        <source srcset="./assets/images/image-graphic-design-desk.jpg" media="(min-width: 750px)">
-                        <img srcset="./assets/images/image-graphic-design-mob.jpg" alt="Image of two cherries on light green background">
+                        <source data-srcset="./assets/images/image-graphic-design-desk.jpg" media="(min-width: 750px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-graphic-design-mob.jpg" alt="Image of two cherries on light green background">
                     </picture>
                     <div class="services__overlay-content generic-text generic-text--cyan">
                         <div class="wrapper wrapper--small spacer">
@@ -106,8 +105,8 @@
                 </div>
                 <div class="columns__span-6 columns__span-12-mob columns--full-height-grow columns__span-6--ordered columns__span-6--overlay">
                     <picture class="gallery__image gallery__image--flex-grow">
-                        <source srcset="./assets/images/image-photography-desk.jpg" media="(min-width: 750px)">
-                        <img srcset="./assets/images/image-photography-mob.jpg" alt="Image of orange on light blue background">
+                        <source data-srcset="./assets/images/image-photography-desk.jpg" media="(min-width: 750px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-photography-mob.jpg" alt="Image of orange on light blue background">
                     </picture>
                     <div class="services__overlay-content generic-text generic-text--blue">
                         <div class="wrapper wrapper--small spacer">
@@ -126,7 +125,7 @@
                     <div class="columns__span-4 columns__span-12-mob">
                         <div class="testimonial spacer--large">
                             <div class="testimonial__image">
-                                <img src="./assets/images/image-emily.jpg" alt="Photo of Emily">
+                                <img class="lazyload" data-srcset="./assets/images/image-emily.jpg" alt="Photo of Emily">
                             </div>
                             <p class="testimonial__quote">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
                             <p class="testimonial__info">
@@ -138,7 +137,7 @@
                     <div class="columns__span-4 columns__span-12-mob">
                         <div class="testimonial spacer--large">
                             <div class="testimonial__image">
-                                <img src="./assets/images/image-thomas.jpg" alt="Photo of Thomas">
+                                <img class="lazyload" data-srcset="./assets/images/image-thomas.jpg" alt="Photo of Thomas">
                             </div>
                             <p class="testimonial__quote">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
                             <p class="testimonial__info">
@@ -150,7 +149,7 @@
                     <div class="columns__span-4 columns__span-12-mob">
                         <div class="testimonial spacer--large">
                             <div class="testimonial__image">
-                                <img src="./assets/images/image-jennie.jpg" alt="Photo of Jennie">
+                                <img class="lazyload" data-srcset="./assets/images/image-jennie.jpg" alt="Photo of Jennie">
                             </div>
                             <p class="testimonial__quote">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly reccomended!</p>
                             <p class="testimonial__info">
@@ -168,26 +167,26 @@
             <div class="columns">
                 <div class="columns__span-3 columns__span-6-mob">
                     <picture class="gallery__image">
-                        <source srcset="./assets/images/image-gallery-milkbottles-desk.jpg" media="(min-width: 376px)">
-                        <img srcset="./assets/images/image-gallery-milkbottles-mob.jpg" alt="Image of milkbottles on blue background">
+                        <source data-srcset="./assets/images/image-gallery-milkbottles-desk.jpg" media="(min-width: 376px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-gallery-milkbottles-mob.jpg" alt="Image of milkbottles on blue background">
                     </picture>
                 </div>
                 <div class="columns__span-3 columns__span-6-mob">
                     <picture class="gallery__image">
-                        <source srcset="./assets/images/image-gallery-orange-desk.jpg" media="(min-width: 376px)">
-                        <img srcset="./assets/images/image-gallery-orange-mob.jpg" alt="Image of milkbottles on blue background">
+                        <source data-srcset="./assets/images/image-gallery-orange-desk.jpg" media="(min-width: 376px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-gallery-orange-mob.jpg" alt="Image of milkbottles on blue background">
                     </picture>
                 </div>
                 <div class="columns__span-3 columns__span-6-mob">
                     <picture class="gallery__image">
-                        <source srcset="./assets/images/image-gallery-cone-desk.jpg" media="(min-width: 376px)">
-                        <img srcset="./assets/images/image-gallery-cone-mob.jpg" alt="Image of milkbottles on blue background">
+                        <source data-srcset="./assets/images/image-gallery-cone-desk.jpg" media="(min-width: 376px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-gallery-cone-mob.jpg" alt="Image of milkbottles on blue background">
                     </picture>
                 </div>
                 <div class="columns__span-3 columns__span-6-mob">
                     <picture class="gallery__image">
-                        <source srcset="./assets/images/image-gallery-sugarcubes-desk.jpg" media="(min-width: 376px)">
-                        <img srcset="./assets/images/image-gallery-sugarcubes-mob.jpg" alt="Image of milkbottles on blue background">
+                        <source data-srcset="./assets/images/image-gallery-sugarcubes-desk.jpg" media="(min-width: 376px)">
+                        <img class="lazyload" data-srcset="./assets/images/image-gallery-sugarcubes-mob.jpg" alt="Image of milkbottles on blue background">
                     </picture>
                 </div>
             </div>
@@ -196,7 +195,7 @@
         <footer class="footer page-section--padding-small page-section--cyan">
             <div class="wrapper spacer">
                 <div class="footer__logo">
-                    <img src="./assets/images/icons/logo-footer.svg">
+                    <img class="lazyload" data-srcset="./assets/images/icons/logo-footer.svg">
                 </div>
                 <nav class="primary-nav">
                     <ul class="primary-nav__list primary-nav__list--footer">
@@ -215,22 +214,22 @@
                     <ul class="primary-nav__list primary-nav__list--footer">
                         <li class="primary-nav__list-item--footer">
                             <a href="#" class="primary-nav__link primary-nav__link--footer">
-                                <img src="./assets/images/icons/icon-facebook.svg">
+                                <img class="lazyload" data-srcset="./assets/images/icons/icon-facebook.svg">
                             </a>
                         </li>
                         <li class="primary-nav__list-item--footer">
                             <a href="#" class="primary-nav__link primary-nav__link--footer">
-                                <img src="./assets/images/icons/icon-instagram.svg">
+                                <img class="lazyload" data-srcset="./assets/images/icons/icon-instagram.svg">
                             </a>
                         </li>
                         <li class="primary-nav__list-item--footer">
                             <a href="#" class="primary-nav__link primary-nav__link--footer">
-                                <img src="./assets/images/icons/icon-twitter.svg">
+                                <img class="lazyload" data-srcset="./assets/images/icons/icon-twitter.svg">
                             </a>
                         </li>
                         <li class="primary-nav__list-item--footer">
                             <a href="#" class="primary-nav__link primary-nav__link--footer">
-                                <img src="./assets/images/icons/icon-pinterest.svg">
+                                <img class="lazyload" data-srcset="./assets/images/icons/icon-pinterest.svg">
                             </a>
                         </li>
                     </ul>
