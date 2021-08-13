@@ -10,7 +10,6 @@
 
     @mixin atMedium {
         background-image: url('./assets/images/image-header-desk.jpg');
-        padding-bottom: 10%;
     }
 
     &__text {
@@ -19,6 +18,11 @@
         align-self: center;
         text-align: center;
         position: relative;
+
+        @mixin atMedium {
+            align-self: start;
+            padding-top: 15rem;
+        }
     }
 
     &__title {
